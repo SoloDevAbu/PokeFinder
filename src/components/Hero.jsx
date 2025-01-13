@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import PokemonView from './PokemonView'
-import pokemon from '../assets/6.png'
 import axios from 'axios'
 
 const Search = () => {
-  const [pokemonNumber, setPokemonNumber] = useState('');
+  const [pokemonNumber, setPokemonNumber] = useState(Number);
   const [pokemon, setPokemon] = useState({
     name: '',
     image: '',
@@ -19,9 +18,7 @@ const Search = () => {
   const handleSearch = async (e) => {
     e.preventDefault();
     try {
-      if(!pokemonNumber < 0 || !pokemonNumber >=1500) {
-        return alert("Please enter valid number")
-      }
+      
       const response = await axios.get(`https://pokeapi.co/api/v2/pokemon-form/${pokemonNumber}`)
       const name = response.data.name;
       const image = response.data.sprites.front_default;
