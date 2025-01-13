@@ -18,7 +18,7 @@ Welcome to the Pokémon Finder project! This application allows users to search 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/pokemon-finder.git
+    git clone https://github.com/SoloDevAbu/pokemon-finder.git
     ```
 2. Navigate to the project directory:
     ```sh
