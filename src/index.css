@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme-color: #FFEAC9;
+}
+
+body {
+  background-color: var(--theme-color);
+}
