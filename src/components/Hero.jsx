@@ -31,7 +31,7 @@ const Search = () => {
 
   return (
     <div className='flex flex-col justify-center items-center mt-10'>
-      <h1 className='text-center font-sans font-semibold mb-5'>Enter Pokemon Number from 1 to 1500 <br /> & <br /> get Your Pokemon Character</h1>
+      <h1 className='text-center font-sans font-semibold mb-5'>Enter Pokemon Number from 1 to 1025 <br /> & <br /> get Your Pokemon Character</h1>
 
       <div className='bg-neutral-300 flex justify-center items-center pl-4 rounded-xl'>
         <input
