@@ -2,7 +2,7 @@ import React from 'react'
 
 const PokemonView = ({name, image, types}) => {
 return (
-    <div className='flex flex-col items-center mt-16'>
+    <div className='flex flex-col items-center'>
         <h1 className='font-sans font-bold text-lg md:text-xl lg:text-2xl mb-10'>{name}</h1>
         <img src={image} alt={name}/>
         {types && types.length > 0 && (

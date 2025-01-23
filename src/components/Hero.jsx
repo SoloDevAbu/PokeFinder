@@ -47,7 +47,11 @@ const Search = () => {
           Search Pokemon
         </button>
       </div>
-      <PokemonView name={pokemon.name.toUpperCase()} image={pokemon.image} types={pokemon.tags}/>
+      {pokemon.name && (
+        <div className='bg-red-300 mt-14 p-4 aspect-square rounded-lg'>
+          <PokemonView name={pokemon.name.toUpperCase()} image={pokemon.image} types={pokemon.tags}/>
+        </div>
+      )}
     </div>
   )
 }
